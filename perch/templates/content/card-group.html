@@ -1,0 +1,17 @@
+<perch:repeater id="cards" label="Cards">
+    <perch:before>
+        <div class="card-group">
+    </perch:before>
+    <div class="card">
+        <img class="card-img-top img-fluid" src="<perch:content type=" image " id="image " label="Image " />" alt="<perch:content type=" text " id="alt " label="Image Description " required="true " help="Description of the image in a few words " />" />
+        <div class="card-block">
+            <h4 class="card-title"><perch:content id="cardtitle" type="text" label="Card Heading" required="true" title="true" help="Heading and card text appear under the image" /></h4>
+            <p class="card-text">
+                <perch:content id="cardtext" type="text" label="Card Text" required="true" />
+            </p>
+        </div>
+    </div>
+    <perch:after>
+        </div>
+    </perch:after>
+</perch:repeater>
