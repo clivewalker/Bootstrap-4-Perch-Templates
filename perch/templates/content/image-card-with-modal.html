@@ -1,0 +1,11 @@
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center">
+    <div class="card">
+        <img src="<perch:content type="image" id="image" label="Image" width="440" height="320" crop="true" />" alt="<perch:content type="text" id="alt" label="Image Description" required="true" help="e.g A boat on the sea" title="true" />" class="card-img img-fluid" />
+        <div class="card-img-overlay">
+            <h4 class="card-title text-xs-center">
+                <a class="<perch:content id="textclass" type="select" label="Text Colour" 
+options="Light Text|text-light, Dark Text|text-dark" allowempty="false" required="true" help="Colour of text overlaid on the image"/>" href="#galleryModal" data-toggle="modal" data-src="<perch:content type="image" id="image" />"><perch:content id="text" type="text" label="Text overlay on the image" required="true" title="true" help="e.f View" /></a>
+           </h4>
+        </div>
+    </div>
+</div>
